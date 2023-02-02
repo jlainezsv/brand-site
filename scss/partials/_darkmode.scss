@@ -1,0 +1,30 @@
+.dark-mode{
+    background-color: var(--white);
+    color: #fff !important;
+
+    //fonts
+    a{
+        color: var(--or-green) !important;
+        &:hover{
+            color: var(--or-Blue) !important;
+        }
+    }
+
+
+    .dropdownlist{
+        background-color: var(--black);
+        a{
+            &:hover{
+                color: var(--black) !important;
+                background-color: var(--or-green);
+            }
+        }
+    }
+    .theme-switch{
+        background-color: #25385d;
+
+        .theme-icon{
+            background-color: #161616 !important;
+        }
+    }
+}

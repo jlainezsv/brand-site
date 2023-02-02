@@ -1,0 +1,159 @@
+// Icons
+
+
+.ico-home{
+    @include ico-hover-svg(
+        $ico-url: url(/images/icons/home.svg), 
+        $bg-color:var(--or-midGray), 
+        $bg-hover:var(--or-green),
+        $size: 18px,
+        $width: 20px, 
+        $height:20px,
+        $margin: 0px
+    );
+}
+
+
+
+
+.action-source-control{
+    @include icon-navaction($ico-url: url(/images/icons/ico-source-control.svg));
+}
+.action-contact{
+    @include icon-navaction($ico-url: url(/images/icons/ico-mail.svg));
+}
+.action-search{
+    @include icon-navaction($ico-url: url(/images/icons/ico-search.svg));
+}
+
+
+//Icons list
+
+.ico-alert{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-alert.svg"));
+}
+.ico-close{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-close.svg"));
+}
+.ico-check{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-check.svg"));
+}
+
+.ico-report{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-report.svg"));
+}
+.ico-take-survey{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-take-survey.svg"));
+}
+.ico-edit{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-edit.svg"));
+}
+.ico-reclaim{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-reclaim.svg"));
+}
+.ico-group{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-group.svg"));
+}
+.ico-keys{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-keys.svg"));
+}
+.ico-360{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-360.svg"));
+}
+.ico-chevron-l{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-chevron-left.svg"));
+    @include ico-size($size: 60% !important);
+}
+.ico-chevron-r{
+    @include ico-bg-svg($ico-url: url("/src/img/icons/ico-chevron-right.svg"));
+    @include ico-size($size: 60% !important);
+}
+.ico-chevron-d{
+    @include ico-bg-svg($ico-url: url("/images/icons/ico-chevron-down.svg"));
+    @include ico-size($size: 60% !important);
+   
+}
+.ico-user{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-user.svg"));
+}
+.ico-logout{
+    @include ico-bg-svg($ico-url: url("/src/img//icons/ico-logout.svg"));
+}
+
+
+// icons size options
+.icosize-1{
+    @include ico-size($size: 40px, $width: 40px, $height:40px);
+}
+.icosize-2{
+    @include ico-size($size: 30px, $width: 30px, $height:30px);
+}
+.icosize-3{
+    @include ico-size($size: 20px, $width: 20px, $height:20px);
+}
+.icosize-4{
+    @include ico-size($size: 17px, $width: 17px, $height:17px);
+}
+.icosize-5{
+    @include ico-size($size: 14px, $width: 14px, $height:14px);
+}
+
+//ico bg color options
+.icolor-mainblue{
+    @include ico-color($ico-color: var(--ldiMainBlue));
+}
+.icolor-blue{
+    @include ico-color($ico-color: var(--ldiSecondBlue));
+}
+.icolor-darkblue{
+    @include ico-color($ico-color: var(--ldiDarkBlue));
+}
+.icolor-darkgray{
+    @include ico-color($ico-color: var(--or-midGray));
+}
+.icolor-gray{
+    @include ico-color($ico-color: var(--ldiGray));
+}
+.icolor-lightgray{
+    @include ico-color($ico-color: var(--ldiLightGray));
+}
+
+// color option
+.color-mainblue{
+    @include text-color($text-color: var(--ldiMainBlue));
+}
+.color-blue{
+    @include text-color($text-color: var(--ldiSecondBlue));
+}
+.color-darkblue{
+    @include text-color($text-color: var(--ldiDarkBlue));
+}
+.color-darkgray{
+    @include text-color($text-color: var(--ldiDarkGray));
+}
+.color-gray{
+    @include text-color($text-color: var(--ldiGray));
+}
+.color-lightgray{
+    @include text-color($text-color: var(--ldiLightGray));
+}
+
+// border option
+.border-mainblue{
+    @include border-color($border-color: var(--ldiMainBlue));
+}
+.border-blue{
+    @include border-color($border-color: var(--ldiSecondBlue));
+}
+.border-darkblue{
+    @include border-color($border-color: var(--ldiDarkBlue));
+}
+.border-darkgray{
+    @include border-color($border-color: var(--ldiDarkGray));
+}
+.border-gray{
+    @include border-color($border-color: var(--ldiGray));
+}
+.border-lightgray{
+    @include border-color($border-color: var(--ldiLightGray));
+}
